@@ -40,7 +40,8 @@ function searchBtn(){
         searchInput.focus();
     });
 
-    searchInput.addEventListener('blur',()=>{
+    searchInput.addEventListener('blur',(e)=>{
+        e.preventDefault();
         searchInput.classList.remove("active");
     });
 };

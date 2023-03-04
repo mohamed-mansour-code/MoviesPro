@@ -22,3 +22,10 @@ nav input.active{
 .navbar-brand{
     cursor: pointer;
 }
+@media (max-width:576px) {
+    .form{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+}
