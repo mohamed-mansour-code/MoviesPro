@@ -10,6 +10,7 @@ const modalImg = document.querySelector(".modal img");
 const modalTitle = document.querySelector(".modal h5"); 
 const modaldetails = document.querySelector(".modal p");
 const modalInfo = document.querySelectorAll(".modal table tr td:last-child");
+const loading = document.querySelector(".load");
 let box = [];
 
 
@@ -32,6 +33,8 @@ searchInput.addEventListener('input',function(){
 
 
 
+
+
 // ========== function =========
 
 function searchBtn(){
@@ -48,6 +51,7 @@ function searchBtn(){
 
 
 async function getData(url){
+    loading.classList.remove("d-none");
     let data = await fetch(url);
     let dataJson = await data.json();
     box = dataJson.results;
@@ -75,6 +79,7 @@ function display(data){
         }
     };
     document.querySelector(".main .row").innerHTML = result;
+    loading.classList.add("d-none");
 };
 
 
@@ -83,8 +88,9 @@ function display(data){
 function details(index){
     modal.classList.add("d-block");
     if(box[index].backdrop_path == null){
-        $(".modal img").remove();
+        $(".modal img").addClass("d-none");
     }else{
+        $(".modal img").removeClass("d-none");
         modalImg.setAttribute("src","https://image.tmdb.org/t/p/w500/" + box[index].backdrop_path);
     };
     modalTitle.innerHTML = box[index].name || box[index].title || box[index].original_title;
