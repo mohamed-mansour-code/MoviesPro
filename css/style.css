@@ -1,0 +1,24 @@
+.main .card,nav{
+    background-color: #373b69;
+}
+
+nav input{
+    width: 0px !important;
+    padding: 0px !important;
+}
+nav input.active{
+    width: 250px !important;
+    padding: .375rem .75rem !important;
+}
+@media (max-width:576px) {
+    nav input.active{
+        flex-basis: 100%;
+        padding: .375rem .75rem !important;
+    }
+}
+.modal{
+    background-color: rgba(0, 0, 0, .6);
+}
+.navbar-brand{
+    cursor: pointer;
+}

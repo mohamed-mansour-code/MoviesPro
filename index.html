@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesPro</title>
+
+
+    <!-- ========= google font ========= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <!-- ========= font awesome ========= -->
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- ========= bootstrap ========= -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- ========= main css ========= -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- ========= style css ========= -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-sec">
+
+
+
+
+    <!-- ========= start navbar ========= -->
+    <nav class="navbar navbar-expand-sm py-3 navbar-dark position-static">
+        <div class="container">
+          <a class="navbar-brand" onclick="window.location.reload()">MoviesPro</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+
+            
+            <form>
+                <div class="input-group fit-content">
+                    <input type="text" class="form-control shadow-none border-0 transition" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <span class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                  </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- ========= end navbar ========= -->
+
+
+
+    <!-- ========= start main ========= -->
+    <section class="py-5 main">
+        <div class="container">
+            <div class="row g-4">
+
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- ========= end main ========= -->
+
+    <!-- ========= start foote ========= -->
+    <footer class="py-3 bg-dark">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <ul class="d-flex align-items-center">
+            <li><a class="p-3 text-white" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="p-3 text-white" href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="p-3 text-white" href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="p-3 text-white" href="#"><i class="fab fa-pinterest"></i></a></li>
+          </ul>
+          <p class="fs-15 lh-25 fw-400 text-white-50">Copyright © 2023 <span class="fw-700 text-white">movies</span></p>
+        </div>
+      </footer>
+    <!-- ========= end foote ========= -->
+
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-dialog  modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Details</h1>
+            <button  type="button" class="btn-close close"></button>
+            </div>
+            <div class="modal-body">
+
+
+                <div class="card border-0">
+                    <img src="./image/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+
+                    <div class="items pt-0 p-3">
+                        <table class="w-100">
+                            <tr class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                                <td>first_air_date:</td>
+                                <td></td>
+                            </tr>
+                            <tr class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                                <td>vote_average:</td>
+                                <td></td>
+                            </tr>
+                            <tr class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                                <td>vote_count:</td>
+                                <td></td>
+                            </tr>
+                            <tr class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                                <td>adult:</td>
+                                <td></td>
+                            </tr>
+                            <tr class="d-flex justify-content-between align-items-center py-2">
+                                <td>original_language:</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <ul class="d-none">
+                            <li class="py-2">
+                                <p class="m-0 fw-500"><span class="fw-700">first_air_date: </span> </p>
+                            </li>
+                            <li class="py-2">
+                                <p class="m-0 fw-500"><span class="fw-700">vote_average: </span></p>
+                            </li>
+                            <li class="py-2">
+                                <p class="m-0 fw-500"><span class="fw-700">vote_count: </span></p>
+                            </li>
+                            <li class="py-2">
+                                <p class="m-0 fw-500"><span class="fw-700">adult: </span></p>
+                            </li>
+                            <li class="py-2">
+                                <p class="m-0 fw-500"><span class="fw-700">original_language: </span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary close">close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  
+
+  
+
+    
+    <!-- ========= jquery javascript ========= -->
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <!-- ========= bootstrap javascript ========= -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
